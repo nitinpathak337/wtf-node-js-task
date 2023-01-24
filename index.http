@@ -1,0 +1,39 @@
+
+post http://localhost:3001/register/
+Content-Type: application/json
+
+{
+  "first_name": "adam_dichard",
+  "last_name": "rich",
+  "email": "Adam Richardrf",
+  "mobile":"1234567764",
+  "password":"12345@Nit",
+  "role":"member",
+  "status":"active"
+ 
+}
+
+###
+post http://localhost:3001/login/
+Content-Type: application/json
+
+{
+ 
+  "email": "Adam Richardrf",
+  
+  "password":"12345@Nit",
+  "role":"member"
+  
+ 
+}
+
+
+###
+get http://localhost:3001/getUserDetails
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IkFkYW0gUmljaGFyZHJmIiwidWlkIjoiYTAxZWI0MDUtMzAxNC00MmRkLTg3NWUtYWNiNTI5MWVhNmIyIiwiaWF0IjoxNjc0NTcwNDIxLCJleHAiOjE2NzcxNjI0MjF9.wkirjYERlqEQzRDn1fZbQu9AJDbK8i42ITZw6FErAfo 
+
+
+
+###
+get http://localhost:3001/allUsers?email=f&first_name=a
+
